@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family: 'Quicksand', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-family);
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #a1cae7;
+    row-gap: 35px;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 30px;
+}
+label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+label[for='deportes'] input[type="text"],
+label[for='deportes'] input[type="number"]{
+    width: 90px;
+}
+label[for='deportes'] p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+label[for='deportes'] span {
+    width: 30%;
+}
+.part_uno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.part_dos {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+
+
+
+@media (min-width: 680px) {
+    main{
+        height: 100%;
+    }
+    form{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+
+}
